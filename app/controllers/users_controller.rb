@@ -9,6 +9,7 @@ class UsersController < ApplicationController
       redirect_to user_path(@user.id)
     else
       redirect_to new_user_path
+    end
   end
 
   private
