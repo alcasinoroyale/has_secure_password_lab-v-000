@@ -57,4 +57,5 @@ Rails.application.routes.draw do
   resources :sessions, only: [:create, :destroy]
 
   get '/login', to: 'sessions#new'
+  get '/logout'
 end
