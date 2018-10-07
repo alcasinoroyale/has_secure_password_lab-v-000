@@ -54,5 +54,5 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   resources :users, only: [:new, :create]
-  resources :sessions
+  resources :sessions, only: [:create, :destroy]
 end
